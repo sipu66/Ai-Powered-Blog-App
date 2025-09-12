@@ -4,8 +4,10 @@ import { useAppContext } from '../../context/AppContext'
 import toast from 'react-hot-toast'
 const Login = () => {
   const{axios,setToken} = useAppContext()
-  const [email,setEmail]= useState("")
-  const[password,setPassword] = useState('')
+ 
+   const [email, setEmail] = useState("admin@example.com");
+  const [password, setPassword] = useState("favblog");
+
 
   const handleSubmit=async(e)=>{
     e.preventDefault()
