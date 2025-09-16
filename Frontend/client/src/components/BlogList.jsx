@@ -20,7 +20,7 @@ const BlogList = () => {
   }
   return (
     <div>
-      <div className='flex justify-center gap-4 sm:gap-8 my-10'>
+      <div className='flex gap-2 sm:gap-4 my-6 overflow-x-auto no-scrollbar px-2 sm:justify-center'>
         {blogCategories.map((item) => (
           <button
             key={item}
